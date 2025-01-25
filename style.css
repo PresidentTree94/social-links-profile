@@ -1,0 +1,96 @@
+html, body, main {
+  height: 100%;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Inter", serif;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(20, 20, 20);
+  color: rgb(255, 255, 255);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width: 390px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+img {
+  border-radius: 100%;
+  width: 88px;
+  height: auto;
+}
+
+h2 {
+  margin: 40px 0 10px;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+section p:first-of-type {
+  color: rgb(197, 248, 42);
+  margin-top: 0;
+  font-weight: 500;
+}
+
+section p:last-of-type {
+  margin: 16px 0 14px;
+  font-weight: 300;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: rgb(51, 51, 51);
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 16px 0;
+  margin-top: 16px;
+}
+
+button:hover {
+  background-color: rgb(197, 248, 42);
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+}
+
+.attribution { 
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: rgb(102, 102, 102);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 440px) {
+  section {
+    padding: 20px;
+    width: 335px;
+  }
+}
