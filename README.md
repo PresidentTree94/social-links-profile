@@ -8,12 +8,12 @@ As part of the [Getting started on Frontend Mentor](https://www.frontendmentor.i
 
 ### Screenshot
 
-![Screenshot of desktop version](images/Screenshot.jpeg)
+![Screenshot of desktop version](images/screenshot.jpeg)
 
 ### Links
 
 - Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/social-links-profile-Eb1ydPJOT_)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [GitHub Page](https://presidenttree94.github.io/social-links-profile/)
 
 ## Author
 
