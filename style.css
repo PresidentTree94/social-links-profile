@@ -19,16 +19,23 @@ html, body {
 body {
   font-family: "Inter", serif;
   font-size: 0.875rem; /*14px*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   background-color: var(--night);
   color: var(--white);
+  overflow-x: hidden;
 }
 
 main {
   min-width: 20.9375rem; /*335px*/
   max-width: 24.375rem; /*390px*/
+  opacity: 0;
+  animation: fadeDown 1s ease forwards;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-100px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 section {
@@ -75,7 +82,7 @@ button {
   padding: 1rem 0;
   margin-top: 1rem;
   transition: background-color ease, color ease, transform ease;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
 }
 
 button:hover {
@@ -98,6 +105,7 @@ footer {
 a {
   text-decoration: none;
   color: var(--lime);
+  font-weight: 600;
 }
 
 a:hover {
