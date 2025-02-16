@@ -15,7 +15,6 @@
 html, body {
   height: 100vh; /*Fallback for svh*/
   height: 100svh;
-  min-width: min-content;
   overflow: auto;
 }
 
@@ -29,9 +28,8 @@ body {
 }
 
 main {
-  /*max-width: 24.375rem;
-  min-width: 15rem;*/
-  width: clamp(15rem, 100%, 24.375rem); /*240px to 390px*/
+  min-width: 15rem; /*240px*/
+  max-width: 24.375rem; /*320px*/
   opacity: 0;
   animation: fadeDown 1s ease forwards;
 }
