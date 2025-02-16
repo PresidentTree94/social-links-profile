@@ -28,9 +28,7 @@ body {
 }
 
 main {
-  /*min-width: 20.9375rem;*/ /*335px*/
-  /*max-width: 24.375rem;*/ /*390px*/
-  width: clamp(20.9375rem, 100%, 24.375rem);
+  width: clamp(20.9375rem, 100%, 24.375rem); /*335px to 390px*/
   opacity: 0;
   animation: fadeDown 1s ease forwards;
 }
