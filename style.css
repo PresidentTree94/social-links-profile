@@ -1,15 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --night: rgb(20, 20, 20);
   --eerieBlack: rgb(31, 31, 31);
   --jet: rgb(51, 51, 51);
   --lime: rgb(197, 248, 42);
   --white: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
