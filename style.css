@@ -28,8 +28,7 @@ body {
 }
 
 main {
-  /*width: clamp(20.9375rem, 100%, 24.375rem);*/ /*335px to 390px*/
-  max-width: 390px;
+  width: clamp(15rem, 100%, 24.375rem); /*240px to 390px*/
   opacity: 0;
   animation: fadeDown 1s ease forwards;
 }
@@ -45,7 +44,8 @@ section {
   border-radius: 0.625rem; /*10px*/
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /*align-items: center;*/
+  text-align: center;
 }
 
 img {
