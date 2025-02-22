@@ -12,24 +12,27 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100vh; /*Fallback for svh*/
-  height: 100svh;
-  overflow: auto;
-}
-
 body {
   font-family: "Inter", serif;
   font-size: 0.875rem; /*14px*/
-  display: grid;
-  place-items: center;
   background-color: var(--night);
   color: var(--white);
 }
 
+.container {
+  max-width: min(100%, 24.375rem); /*390px*/
+  min-height: 100vh; /*Fallback for svh*/
+  min-height: 100svh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
 main {
   min-width: 15rem; /*240px*/
-  max-width: 24.375rem; /*320px*/
+  text-align: center;
   opacity: 0;
   animation: fadeDown 1s ease forwards;
 }
@@ -99,7 +102,6 @@ button:active {
 
 footer {
   font-size: 0.6875rem; /*11px*/
-  text-align: center;
   margin: 0.6875rem 1rem 0; /*11px*/
   text-wrap: pretty;
 }
