@@ -4,6 +4,7 @@
   --jet: rgb(51, 51, 51);
   --lime: rgb(197, 248, 42);
   --white: rgb(255, 255, 255);
+  --mainPadding: 1rem;
 }
 
 * {
@@ -20,7 +21,7 @@ body {
 }
 
 .container {
-  max-width: min(100%, 24.375rem); /*390px*/
+  max-width: min(100%, calc(24.375rem + (var(--mainPadding) * 2))); /*390px + 1rem round padding*/
   min-height: 100vh; /*Fallback for svh*/
   min-height: 100svh;
   margin: 0 auto;
@@ -31,8 +32,8 @@ body {
 }
 
 main {
-  min-width: 15rem; /*240px*/
   text-align: center;
+  padding: var(--mainPadding);
   opacity: 0;
   animation: fadeDown 1s ease forwards;
 }
