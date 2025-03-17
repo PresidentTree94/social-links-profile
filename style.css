@@ -6,6 +6,18 @@
   --white: rgb(255, 255, 255);
 }
 
+.altMode {
+  --night: rgb(235, 235, 235);
+  --eerieBlack: rgb(224, 224, 224);
+  --jet: rgb(204, 204, 204);
+  --lime: rgb(157, 208, 2);
+  --white: rgb(20, 20, 20);
+}
+
+.disable-transitions *:not(#toggle) {
+  transition: none !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +40,14 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+#toggle {
+  background-color: var(--white);
+}
+
+svg {
+  fill: var(--jet);
 }
 
 main {
@@ -94,6 +114,11 @@ button:hover {
   background-color: var(--lime);
   color: var(--jet);
   cursor: pointer;
+}
+
+.altMode button:hover {
+  background-color: var(--lime);
+  color: inherit;
 }
 
 button:active {
