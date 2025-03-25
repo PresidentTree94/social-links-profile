@@ -1,0 +1,115 @@
+:root {
+  --night: rgb(20, 20, 20);
+  --eerieBlack: rgb(31, 31, 31);
+  --jet: rgb(51, 51, 51);
+  --lime: rgb(197, 248, 42);
+  --white: rgb(255, 255, 255);
+}
+
+.altMode {
+  --night: rgb(235, 235, 235);
+  --eerieBlack: rgb(224, 224, 224);
+  --jet: rgb(204, 204, 204);
+  --lime: rgb(157, 208, 2);
+  --white: rgb(20, 20, 20);
+}
+
+.disable-transitions *:not(#toggle) {
+  transition: none !important;
+}
+
+body {
+  font-family: "Inter", serif;
+  font-size: 0.875rem; /*14px*/
+  background-color: var(--night);
+  color: var(--white);
+}
+
+.container {
+  max-width: min(100%, 26.375rem); /*422px*/
+  min-height: 100vh; /*Fallback for svh*/
+  min-height: 100svh;
+  align-items: center;
+}
+
+#toggle {
+  background-color: var(--white);
+}
+
+svg {
+  fill: var(--jet);
+}
+
+main {
+  text-align: center;
+  padding: 1rem;
+  opacity: 0;
+  animation-name: fadeDown;
+}
+
+section {
+  background-color: var(--eerieBlack);
+  padding: 2.5rem; /*40px*/
+  border-radius: 0.625rem; /*10px*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  border-radius: 100%;
+  width: 5.5rem; /*88px*/
+  height: auto;
+}
+
+h1 {
+  margin: 2rem 0 0.625rem; /*32px 10px*/
+  font-weight: 500;
+  font-size: 1.5rem; /*24px*/
+}
+
+section p:first-of-type {
+  color: var(--lime);
+  font-weight: 500;
+}
+
+section p:last-of-type {
+  margin: 2rem 0 0.875rem; /*32px 14px*/
+  font-weight: 300;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: var(--jet);
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  width: 100%;
+  border-radius: 0.625rem; /*10px*/
+  font-weight: 600;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  transition: background-color ease, color ease, transform ease;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: var(--lime);
+  color: var(--jet);
+  cursor: pointer;
+}
+
+.altMode button:hover {
+  background-color: var(--lime);
+  color: inherit;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+a {
+  color: var(--lime);
+}
